@@ -1,0 +1,17 @@
+{
+  "backend_sg_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-08e027917340b1443"
+  },
+  "configuration_guide": {
+    "sensitive": false,
+    "type": "string",
+    "value": "\r\n========================================\r\nDEPLOYMENT SUCCESSFUL!\r\n========================================\r\n\r\nNext Steps:\r\n\r\n1. SSH into Nginx server:\r\n   ssh ec2-user@51.112.186.108\r\n\r\n2. Edit Nginx configuration:\r\n   sudo vim /etc/nginx/nginx.conf\r\n\r\n3. Update backend private IPs in upstream block:\r\n   - web-1\r\n   - web-2\r\n   - web-3\r\n\r\n4. Restart Nginx:\r\n   sudo systemctl restart nginx\r\n\r\n5. Open browser:\r\n   https:51.112.186.108\r\n\r\n========================================\r\n"
+  },
+  "nginx_sg_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "sg-0addbdc83a4f35e04"
+  }
+}
